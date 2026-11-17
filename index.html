@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>카페베네 메인페이지 레이아웃</title>
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" href="./project_img/favicon.ico" type="image/x-icon">
+
+  <!-- 1. css 초기화 -->
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+
+  <!-- 2. 공통 서식 -->
+  <link rel="stylesheet" href="./css/common.css" type="text/css">
+
+  <!-- 3. pc버전 서식 -->
+  <link href="./css/pc.css" rel="stylesheet" type="text/css" >
+
+  <!-- 4. tablet서식 -->
+  <link href="./css/tablet.css" rel="stylesheet" type="text/css" >
+
+  <!-- 5. mobile서식 -->
+  <link href="./css/mobile.css" rel="stylesheet" type="text/css" >
+
+  <!-- 폰트어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" type="text/css">
+
+  <!-- 스와이퍼  -->
+  <link rel="stylesheet" href="./css/swiper.css" />
+
+</head>
+<body>
+  <!-- 상단 헤더 영역 -->
+  <header id="header">
+    <div class="header_inner">
+      <h1><a href="index.html"><img src="./project_img/CAFFEBENE.svg" alt="카페베네 로고"></a></h1>
+
+<div id="nav_wrap">
+        <a href="#" id="close_btn" title="닫기 메뉴">
+          <i class="fa-solid fa-xmark"></i>
+        </a>
+
+        <!-- 모바일 내비게이션용 검색창 (추가) -->
+        <div class="mobile_search_box">
+          <input type="text" title="검색어 입력">
+          <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <nav class="gnb" id="gnb">
+          <ul>
+            <li>
+              <a href="brand.html" title="브랜드">브랜드 <i class="fa-solid fa-chevron-down arrow"></i></a>
+                <ul class="sub">
+                  <li><a href="brand.html" title="브랜드 스토리">브랜드 스토리</a></li>
+                  <li><a href="b.html" title="BI">BI</a></li>
+                  <li><a href="b.html" title="원두">원두</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="news.html" title="소식">소식 <i class="fa-solid fa-chevron-down arrow"></i></a>
+                <ul class="sub">
+                  <li><a href="news.html" title="공지사항">공지사항</a></li>
+                  <li><a href="n.html" title="이벤트">이벤트</a></li>
+                  <li><a href="n.html" title="고객의 소리">고객의 소리</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="menu.html" title="메뉴">메뉴 <i class="fa-solid fa-chevron-down arrow"></i></a>
+                <ul class="sub">
+                  <li><a href="menu.html" title="음료">음료</a></li>
+                  <li><a href="m.html" title="푸드">푸드</a></li>
+                  <li><a href="m.html" title="상품">상품</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="store.html" title="매장">매장 <i class="fa-solid fa-chevron-down arrow"></i></a>
+                <ul class="sub">
+                  <li><a href="store.html" title="매장찾기">매장찾기</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="members.html" title="멤버스">멤버스 <i class="fa-solid fa-chevron-down arrow"></i></a>
+                <ul class="sub">
+                  <li><a href="members.html" title="멤버십 안내">멤버십 안내</a></li>
+                  <li><a href="m.html" title="멤버십 서비스">멤버십 서비스</a></li>
+                  <li><a href="m.html" title="등급 및 혜택">등급 및 혜택</a></li>
+                  <li><a href="m.html" title="FAQ">FAQ</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="franchise.html" title="창업안내">창업안내 <i class="fa-solid fa-chevron-down arrow"></i></a>
+                <ul class="sub">
+                  <li><a href="franchise.html" title="창업문의">창업문의</a></li>
+                  <li><a href="f.html" title="창업소개">창업소개</a></li>
+                </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    <nav class="icon_nav">
+      <a href="login.html" id="login" title="로그인">
+      <i class="fa-regular fa-user"></i>
+      </a>
+      <a href="location.html" id="location" title="매장찾기">
+      <i class="fa-solid fa-location-dot"></i>
+      </a>
+      <a href="search.html" id="search" title="검색">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      </a>
+      <a href="#" id="bars" title="메뉴">
+      <i class="fa-solid fa-bars"></i>
+      </a>
+      </nav>
+    </div>
+
+    <nav class="lnb">
+      <ul>
+        <li><a href="#MAIN" title="메인">MAIN</a></li>
+        <li><a href="#MENU" title="메뉴">MENU</a></li>
+        <li><a href="#FRANCHISE" title="프랜차이즈">FRANCHISE</a></li>
+        <li><a href="#ROASTING_PLANT" title="로스팅플랜트">ROASTING PLANT</a></li>
+        <li><a href="#SHOP" title="상품">SHOP</a></li>
+        <li><a href="#STORE" title="매장찾기">STORE</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 메인 영역 -->
+  <main>
+    <!-- 1 -->
+    <article class="swiper mySwiper" id="MAIN">
+        <div class="swiper-wrapper">
+
+          <!-- pc 슬라이드 -->
+          <div class="swiper-slide">
+              <img src="./project_img/1pc.jpg" alt="" class="pc_img">
+              <img src="./project_img/1tablet.jpg" alt="" class="tablet_img">
+              <img src="./project_img/1mobile.jpg" alt="" class="mobile_img">
+          </div>
+          <div class="swiper-slide">
+              <img src="./project_img/2pc.jpg" alt="" class="pc_img">
+              <img src="./project_img/2tablet.jpg" alt="" class="tablet_img">
+              <img src="./project_img/2mobile.jpg" alt="" class="mobile_img">
+          </div>
+          <div class="swiper-slide">
+              <img src="./project_img/3pc.jpg" alt="" class="pc_img">
+              <img src="./project_img/3tablet.jpg" alt="" class="tablet_img">
+              <img src="./project_img/3mobile.jpg" alt="" class="mobile_img">
+          </div>
+        </div>
+
+        <div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </article>
+
+    <!-- 2 -->
+    <section class="menu" id="MENU">
+      <article class="menu_txt">
+        <h2>MENU</h2>
+        <h3>Summer Tasty</h3>
+        <p>더위에 지친 당신의<br>사로잡을 가장 달콤한 제안,<br><span>Summer Tasty</span> 신메뉴를 만나보세요!</p>
+        <a href="beverage.html">메뉴 더보기</a>
+      </article>
+
+    <!-- Swiper -->
+    <div class="swiper menu_list">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <ul>
+            <li>
+              <a href="menu.html">
+                <img src="./project_img/메뉴1.png" alt="">
+                <p>애플망고 치즈  컵빙수</p>
+              </a>
+            </li>
+            </ul>
+            </div>
+        <div class="swiper-slide">
+          <ul>
+            <li>
+              <a href="menu.html">
+                <img src="./project_img/메뉴2.png" alt="">
+                <p>멜론 젤라또 프라페노</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <ul>
+            <li>
+              <a href="menu.html">
+                <img src="./project_img/메뉴3.png" alt="">
+                <p>우리팥 컵빙수</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <ul>
+            <li>
+              <a href="menu.html">
+                <img src="./project_img/메뉴4.png" alt="">
+                <p>딸기 쿠키앤크림 프라페노</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <ul>
+            <li>
+              <a href="menu.html">
+                <img src="./project_img/메뉴5.png" alt="">
+                <p>복숭아 제주 레몬 에이드</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <ul>
+            <li>
+              <a href="menu.html">
+                <img src="./project_img/메뉴6.png" alt="">
+                <p>복숭아 요구르트 프라페노</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    </section>
+
+    <!-- 3 -->
+  <section class="franchise" id="FRANCHISE">
+      <img src="./project_img/franchise.png" alt="매장찾기" class="pc_franchise_img">
+      <img src="./project_img/franchise_mobile.png" alt="매장찾기" class="m_franchise_img"> <!-- 모바일용 사진 추가 -->
+      <article class="franchise_txt">
+        <h2>FRANCHISE</h2>
+        <h3>CAFFE BENE</h3>
+        <p>성공적인 창업을 위한 최고의 파트너<br>
+        오랜 노하우와 탄탄한 시스템으로<br>
+        더 안정적인 창업을 제안합니다.</p>
+        <a href="franchise.html">창업문의</a>
+      </article>
+    </section>
+
+    <!-- 4 -->
+    <section class="roasting" id="ROASTING_PLANT">
+      <article class="roasting_top">
+        <div class="roasting_txt">
+          <h2>ROASTING PLANT</h2>
+          <p>최첨단 시설에서 로스팅 한 더욱 맛있는 원두를 지금 카페베네에서 만나보세요.</p>
+          <div class="menu_box">
+            <a href="franchise.html">로스팅 플랜트</a>
+            <a href="franchise.html">카페베네 블렌드</a>
+          </div>
+        </div>
+      </article>
+      <article class="roasting_bottom">
+        <img src="./project_img/공장pc.png" alt="공장" class="pc_roasting_img">
+        <img src="./project_img/tablet_공장.png" alt="공장" class="t_roasting_img">
+        <img src="./project_img/roasting_mobile.png" alt="공장" class="m_roasting_img"> <!-- 모바일용 사진 추가 -->
+        <div class="roasting_txt02">
+          <h2>
+            <span>C</span>affebene
+            <span>S</span>pecialty 
+            <span>E</span>spresso 
+            <span>B</span>lend
+          </h2>
+          <hr>
+          <p>우리 동네 숨은 스페셜티 블렌드 맛집, 여기는 카페베네입니다.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- 5 -->
+    <section class="shop" id="SHOP">
+    <!-- 전체 콘텐츠 가운데 정렬을 위한 내부 컨테이너 -->
+    <div class="shop_inner">
+    
+    <!-- 우측 상단 SHOP 타이틀 -->
+    <div class="shop_title">
+      <h2>SHOP</h2>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper shop_list">
+      <div class="swiper-wrapper">
+        
+        <!-- 슬라이드 1 -->
+        <div class="swiper-slide">
+          <div class="product_card">
+            <img src="./project_img/shop01.svg" alt="베네캣 드라이브 텀블러">
+          </div>
+          <p class="product_name">베네캣 드라이브 텀블러(그레이)</p>
+        </div>
+
+        <!-- 슬라이드 2 -->
+        <div class="swiper-slide">
+          <div class="product_card">
+            <img src="./project_img/shop02.svg" alt="베네 드립백 디카페인">
+          </div>
+          <p class="product_name">베네 드립백 디카페인 선물세트</p>
+        </div>
+
+        <!-- 슬라이드 3 -->
+        <div class="swiper-slide">
+          <div class="product_card">
+            <img src="./project_img/shop03.svg" alt="콜드브루 블렌드">
+          </div>
+          <p class="product_name">콜드브루 블렌드</p>
+        </div>
+
+        <!-- 슬라이드 4 -->
+        <div class="swiper-slide">
+          <div class="product_card">
+            <img src="./project_img/shop4.png" alt="마노 아프리카 마일드 100T">
+          </div>
+          <p class="product_name">마노 아프리카 마일드 100T</p>
+        </div>
+
+        <!-- 슬라이드 5 -->
+        <div class="swiper-slide">
+          <div class="product_card">
+            <img src="./project_img/shop5.png" alt="베네캣 드라이브 텀블러(민트)">
+          </div>
+          <p class="product_name">베네캣 드라이브 텀블러(민트)</p>
+        </div>
+
+        <!-- 슬라이드 6 -->
+        <div class="swiper-slide">
+          <div class="product_card">
+            <img src="./project_img/shop6.png" alt="콜드브루 콜롬비아 안티오키아">
+          </div>
+          <p class="product_name">콜드브루 콜롬비아 안티오키아</p>
+        </div>
+      </div>
+      
+      <!-- 양옆 화살표 -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    
+  </div>
+</section>
+
+    <!-- 6 -->
+    <section class="store" id="STORE">
+      <img src="./project_img/store.png" alt="스토어" class="pc_store_img">
+      <img src="./project_img/tablet_store.png" alt="스토어" class="t_store_img">
+      <img src="./project_img/store_mobile.png" alt="스토어" class="m_store_img"> <!-- 모바일용 사진 추가 -->
+      <article class="store_txt">
+        <h2>STORE</h2>
+        <p>가장 가까운 카페베네 매장을 찾아보세요.</p>
+        <a href="store.html">매장 찾기</a>
+      </article>
+    </section>
+
+    <!-- 탑 버튼 -->
+    <a href="#TOP" id="top_btn" title="페이지 최상단 이동">
+      <i class="fa-solid fa-arrow-up"></i>
+      <span>TOP</span>
+    </a>
+
+  </main>
+
+  <!-- 하단 푸터 영역 -->
+  <footer>
+    <nav class="bottom_nav">
+      <ul>
+        <li><a href="terms.html" title="이용약관">이용약관</a></li>
+        <li><a href="members-terms.html" title="멤버스 이용약관">멤버스 이용약관</a></li>
+        <li><a href="biz-info.html" title="사업자정보확인">사업자정보확인</a></li>
+        <li><a href="location.html" title="오시는길">오시는길</a></li>
+        <li><a href="franchise.html" title="가맹문의">가맹문의</a></li>
+        <li><a href="privacy.html" title="개인정보처리방침">개인정보처리방침</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer_inner">
+    <!-- 로고 -->
+    <h2>
+      <a href="index.html" title="카페베네 로고">
+        <img src="./project_img/CAFFEBENE02.svg" alt="">
+      </a>
+    </h2>
+    <!-- 회사정보 -->
+    <p>경기도 파주시 월롱면 홀작로 0000  대표이사 : 0000 <br> 사업자등록번호 : 000-00-00000  test@caffebene.co.kr</p>
+    <!-- 카피라이트 -->
+    <p>Copyright© by Caffebene, All rights reserved.</p>
+    <!-- sns -->
+    <nav class="sns">
+      <a href="https://www.facebook.com" id="facebook" title="페이스북">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com" id="insta" title="인스타그램">
+      <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.threads.net" id="threads" title="스레드">
+      <i class="fa-brands fa-threads"></i>
+      </a>
+    </nav>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+  <script src="./script/main.js"></script>
+  
+</body>
+</html>
